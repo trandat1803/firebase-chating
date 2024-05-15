@@ -29,7 +29,60 @@ const Chat = () => {
                     <img src="./info.png" alt=""/>
                 </div>
             </div>
-            <div className="center"></div>
+            <div className="center">
+                <div className="message">
+                    <img src="./avatar.png" alt=""/>
+                    <div className="texts">
+                        <p>
+                            Chào bạn mình tên là Kei, rất vui được gặp bạn.
+                        </p>
+                        <span>1 min ago</span> 
+                    </div>
+                </div>
+                <div className="message own">
+                    <div className="texts">
+                        <p>
+                            Chào bạn mình tên là Kei, rất vui được gặp bạn.
+                        </p>
+                        <span>1 min ago</span> 
+                    </div>
+                </div>
+                <div className="message">
+                    <img src="./avatar.png" alt=""/>
+                    <div className="texts">
+                        <p>
+                            Chào bạn mình tên là Kei, rất vui được gặp bạn.
+                        </p>
+                        <span>1 min ago</span> 
+                    </div>
+                </div>
+                <div className="message own">
+                    <div className="texts">
+                        <p>
+                            Chào bạn mình tên là Kei, rất vui được gặp bạn.
+                        </p>
+                        <span>1 min ago</span> 
+                    </div>
+                </div>
+                <div className="message">
+                    <img src="./avatar.png" alt=""/>
+                    <div className="texts">
+                        <p>
+                            Chào bạn mình tên là Kei, rất vui được gặp bạn.
+                        </p>
+                        <span>1 min ago</span> 
+                    </div>
+                </div>
+                <div className="message own">
+                    <div className="texts">
+                        <img src=""/>
+                        <p>
+                            Chào bạn mình tên là Kei, rất vui được gặp bạn. bạn nên hiểu rằng là tôi là một người tốt, không có lý do gì mà tôi không thể đứng ở đây.
+                        </p>
+                        <span>1 min ago</span> 
+                    </div>
+                </div>
+            </div>
             <div className="bottom">
                 <div className="icons">
                     <img src="./img.png" alt="" />
@@ -42,7 +95,9 @@ const Chat = () => {
                 onChange={e=>setText(e.target.value)}/>
                 <div className="emoji">
                     <img src="./emoji.png" alt="" onClick={()=>setOpen((prev) => !prev)}/>
+                    <div className="picket">
                     <EmojiPicker open={open} onEmojiClick={handleEmoji}/>
+                    </div>
                 </div>
                 <button className="sendButton">Send</button>
             </div>
